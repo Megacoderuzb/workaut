@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --font: "Poppins", sans-serif;
+  --green: #25ab75;
+  --grey: rgba(255, 255, 255, 1);
+}
+/* variables end */
+/* global */
+body {
+  background-color: #000;
+  font-family: var(--font);
+}
+.container {
+  margin: 0 auto;
+  width: 90vw;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn-light {
+  color: #fff;
+  background: var(--green);
+  border-radius: 10px;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+.btn-dark {
+  background: #ffffff11;
+  border-radius: 10px;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+/* global end */
+/* header */
+header#navbar {
+  width: 1400px;
+
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #000;
+}
+header#navbar .logo-txt {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+header#navbar .nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  opacity: 0.67;
+  gap: 3.2rem;
+}
+/* header end */
+/* hero */
+section#hero {
+  width: 90vw;
+  height: 100vh;
+}
+section#hero .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: #333;
+  text-align: center;
+  width: 25vw;
+  padding: 0.6rem 1rem;
+  border-radius: 200px;
+  margin-top: 3rem;
+}
+section#hero .description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+section#hero .description .mini-btn {
+  background-color: var(--green);
+  border-radius: 30%;
+  padding: 0.4rem 0.5rem;
+
+  text-align: center;
+}
+section#hero .showcase {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1400px;
+
+  gap: 4rem;
+}
+
+section#hero .showcase .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#hero .showcase .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+section#hero .showcase h1 {
+  font-weight: 600;
+  font-size: 170px;
+  line-height: 80%;
+  letter-spacing: -2px;
+  z-index: 1;
+  color: #ffffff;
+}
+section#hero .showcase .left p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 181%;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 0.5;
+  width: 600px;
+}
+section#hero .showcase img {
+  width: 450px;
+  height: 600px;
+
+  background-color: transparent;
+}
+section#hero .showcase .sign {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+section#hero .showcase .signs {
+  width: 160px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  gap: 1rem;
+  background: #ffffff11;
+  border-radius: 20px;
+  color: #fff;
+}
+section#hero .showcase .left .btns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+section#hero .showcase .signs1 {
+  width: 160px;
+  height: 98px;
+  background: #ffffff11;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  gap: 1rem;
+  color: #fff;
+}
+section#hero .showcase .signs h2 {
+  color: #ffe642;
+}
+section#hero .showcase .signs1 h2 {
+  color: #fb1351;
+}
+/* hero end */
+/* exercises */
+section#exercise {
+  width: 1400px;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+section#exercise .exercise-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+section#exercise .exercise-txt h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.3px;
+}
+section#exercise .exercise-txt a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  opacity: 0.67;
+  align-self: flex-end;
+  cursor: pointer;
+}
+section#exercise .exercise-types {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  position: relative;
+}
+section#exercise .exercise-types .exercises {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#exercise .exercise-types .type {
+  position: relative;
+}
+section#exercise .exercise-types .exercises h3 {
+  position: absolute;
+  bottom: -20px;
+  color: #fff;
+  z-index: 333;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 45px;
+  letter-spacing: 0.3px;
+  background-image: linear-gradient(to top, #000, #333, transparent);
+  width: 373px;
+}
+
+section#exercise .exercises p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  margin-top: 0.8rem;
+  color: #ffffff;
+  position: absolute;
+  top: 17rem;
+  opacity: 0.67;
+}
+/* exercises end */
+/* program */
+section#program {
+  width: 1400px;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35rem;
+}
+section#program .part1 {
+  display: flex;
+  color: #fff;
+}
+section#program .part1 .left {
+  position: relative;
+  width: 350px;
+  height: 610px;
+}
+section#program .part1 .left h2 {
+  font-weight: 600;
+  font-size: 130px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  width: 523px;
+  height: 480px;
+  color: #ffffff;
+  z-index: 12;
+  position: absolute;
+}
+section#program .part1 .left img {
+  z-index: 3;
+  position: absolute;
+  top: 29rem;
+}
+section#program .part1 .right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1058px;
+  height: 600px;
+  background: #ffffff11;
+}
+section#program .part1 .right p {
+  position: absolute;
+  width: 540px;
+  height: 200px;
+  left: 382px;
+  top: 27px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 50px;
+
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+section#program .part1 .right .btn-light {
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  left: 400px;
+  top: 277px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#program .part2 {
+  width: 1400px;
+
+  /* display: flex;
+  flex-direction: row; */
+  color: #fff;
+  position: relative;
+}
+section#program .part2 .trainer img {
+  width: 321px;
+  height: 321px;
+}
+section#program .part2 .trainer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-left: 20px;
+}
+section#program .part2 .trainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section#program .part2 .trainer h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+section#program .part2 .trainer:nth-child(1) {
+  margin-left: 1.3rem;
+}
+section#program .part2 .trainer:nth-child(2) {
+  position: absolute;
+  left: 341px;
+  top: 321px;
+}
+section#program .part2 .trainer:nth-child(3) {
+  position: absolute;
+  left: 662px;
+  top: -189px;
+}
+section#program .part2 .trainer:nth-child(3) img {
+  width: 558px;
+  height: 514px;
+}
+
+/* program end */
+/* footer */
+section#footer {
+  width: 1400px;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+section#footer .part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section#footer .part h5 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+  opacity: 0.34;
+}
+section#footer .part .exrcise-name p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 1rem;
+}
+section#footer .part .exrcise-name h3 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 140%;
+  letter-spacing: 0.833333px;
+  color: #fff;
+}
+
+/* footer end */
